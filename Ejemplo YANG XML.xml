@@ -1,0 +1,71 @@
+<interface xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native"  xmlns:ios="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+  <GigabitEthernet>
+    <name>1</name>
+    <description>Link CSR1k to DEVASC-LABVM</description>
+    <ip>
+    <address>
+    <primary>
+      <address>192.168.2.1</address>
+      <mask>255.255.255.0</mask>
+    </primary>
+  </address>
+</ip>
+<mop>
+  <enabled>false</enabled>
+  <sysid>false</sysid>
+</mop>
+<negotiation xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-ethernet">
+  <auto>true</auto>
+</negotiation>
+</GigabitEthernet>
+<GigabitEthernet>
+  <name>2</name>
+  <description>WAN Interface</description>
+  <ip>
+  <address>
+  <primary>
+    <address>172.16.12.1</address>
+    <mask>255.255.255.0</mask>
+  </primary>
+</address>
+</ip>
+<mop>
+  <enabled>false</enabled>
+  <sysid>false</sysid>
+</mop>
+<negotiation xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-ethernet">
+  <auto>true</auto>
+</negotiation>
+</GigabitEthernet>
+<GigabitEthernet>
+  <name>3</name>
+  <description>LAN Interface</description>
+  <shutdown/>
+  <ip>
+  <address>
+  <primary>
+    <address>192.168.10.1</address>
+    <mask>255.255.255.0</mask>
+  </primary>
+</address>
+</ip>
+<mop>
+  <enabled>false</enabled>
+  <sysid>false</sysid>
+</mop>
+<negotiation xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-ethernet">
+  <auto>true</auto>
+</negotiation>
+</GigabitEthernet>
+<GigabitEthernet>
+  <name>4</name>
+  <shutdown/>
+  <mop>
+    <enabled>false</enabled>
+    <sysid>false</sysid>
+  </mop>
+  <negotiation xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-ethernet">
+    <auto>true</auto>
+  </negotiation>
+</GigabitEthernet>
+</interface>
